@@ -4,9 +4,10 @@
 .features-list__item {
   display: inline-block;
   width: 270px;
-}
-.features-list__item:not(:last-child) {
+
+&:not(:last-child) {
   margin-right: 30px;
+}
 }
 .features-list__thumb {
   width: 270px;

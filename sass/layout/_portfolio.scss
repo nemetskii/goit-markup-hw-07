@@ -17,13 +17,14 @@
     box-shadow var(--transition-duration-and-func);
 
   background-color: var(--third-bg-color);
-}
-.portfolio-list__btn:hover,
-.portfolio-list__btn:focus {
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  color: var(--accent-text-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--accent-text-color);
+  }
 }
 .projects-list {
   display: flex;
@@ -38,11 +39,12 @@
 .projects-list__link {
   display: block;
   transition: box-shadow var(--transition-duration-and-func);
-}
-.projects-list__link:hover,
-.projects-list__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 .projects-list__overlay {
   position: relative;
@@ -65,10 +67,11 @@
 
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
-}
-.projects-list__link:hover .projects-list__overlay-text,
-.projects-list__link:focus .projects-list__overlay-text {
-  transform: translate(0, 0);
+
+  .projects-list__link:hover &,
+  .projects-list__link:focus & {
+    transform: translate(0, 0);
+  }
 }
 .projects-list__container {
   padding: 20px 24px;
